@@ -3,8 +3,8 @@ package com.example.domain;
 import java.util.Date;
 
 /**
- * @author tadunakitamura 
  * 従業員情報一覧のドメイン.
+ * @author tadunakitamura 
  */
 
 public class Employee {
@@ -47,6 +47,7 @@ public class Employee {
 
 	public Employee() {
 	}
+
 
 	public Employee(Integer id, String name, String image, String gender, Date hireDate, String mailAddress,
 			String zipCode, String address, String telephone, Integer salary, String characteristics,

@@ -12,6 +12,12 @@ import org.springframework.stereotype.Repository;
 
 import com.example.domain.Employee;
 
+/**
+ * employeesテーブルを操作するリポジトリ.
+ * 
+ * @author tadunakitamura
+ *
+ */
 @Repository
 public class EmployeeRepository {
 
@@ -40,7 +46,7 @@ public class EmployeeRepository {
 	};
 
 	/**
-	 * 従業員一覧情報を入社順で取得します.
+	 * 従業員一覧情報を入社順で取得.
 	 * 
 	 * @return 従業員一覧
 	 */

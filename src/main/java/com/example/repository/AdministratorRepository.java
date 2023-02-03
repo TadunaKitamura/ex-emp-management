@@ -41,13 +41,13 @@ public class AdministratorRepository {
 	/**
 	 * 管理者情報の挿入.
 	 * 
-	 * @param administrator:管理者情報
+	 * @param administrator 管理者情報
 	 */
 	public void insert(Administrator administrator) {
 
 		SqlParameterSource param = new BeanPropertySqlParameterSource(administrator);
 
-		String insertSql = "INSERT INTO administrators VALUES(:id,:name,:mailAddress,:password) ;";
+		String insertSql = "INSERT INTO administrators(name,mail_address,password) VALUES(:name,:mailAddress,:password) ;";
 		template.update(insertSql, param);
 
 	}
@@ -55,12 +55,12 @@ public class AdministratorRepository {
 	/**
 	 * メールアドレスとパスワードから管理者情報を取得.
 	 * 
-	 * @param mailAddress:管理者のメールアドレス
-	 * @param password:管理者のパスワード
+	 * @param mailAddress 管理者のメールアドレス
+	 * @param password 管理者のパスワード
 	 * @return 管理者情報
 	 */
 	public Administrator findByMailAddressAndPassword(String mailAddress, String password) {
-		String sql = "SELECT id,name FROM administrators WHERE mail_address:mailAddress AND password=:password;";
+		String sql = "SELECT id,name,mail_address,password FROM administrators WHERE mail_address:mailAddress AND password=:password;";
 		SqlParameterSource param = new MapSqlParameterSource().addValue("mailAddress", mailAddress).addValue("password",
 				password);
 

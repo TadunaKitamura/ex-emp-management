@@ -2,6 +2,7 @@ package com.example.domain;
 
 /**
  * 管理者情報一覧のドメイン.
+ * 
  * @author tadunakitamura 
  */
 public class Administrator {

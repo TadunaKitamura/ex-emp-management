@@ -1,7 +1,7 @@
 package com.example.form;
 
 /**
- * 管理者情報のフォーム
+ * 管理者情報のフォーム.
  * 
  * @author tadunakitamura
  *

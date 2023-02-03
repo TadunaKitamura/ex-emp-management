@@ -3,7 +3,8 @@ package com.example.domain;
 import java.util.Date;
 
 /**
- * 従業員情報一覧のドメイン.
+ * 従業員情報のドメイン.
+ * 
  * @author tadunakitamura 
  */
 

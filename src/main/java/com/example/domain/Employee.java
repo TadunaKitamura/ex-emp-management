@@ -4,45 +4,45 @@ import java.util.Date;
 
 /**
  * @author tadunakitamura 
- * 従業員情報一覧.
+ * 従業員情報一覧のドメイン.
  */
 
 public class Employee {
 
-	// 従業員ID
+	/** 従業員ID */
 	private Integer id;
 
-	// 従業員名
+	/** 従業員名 */
 	private String name;
 
-	// 顔写真
+	/** 顔写真 */
 	private String image;
 
-	// 性別
+	/** 性別 */
 	private String gender;
 
-	// 入社日
+	/** 入社日 */
 	private Date hireDate;
 
-	// メールアドレス
+	/** メールアドレス */
 	private String mailAddress;
 
-	// 郵便番号
+	/** 郵便番号 */
 	private String zipCode;
 
-	// 住所
+	/** 住所 */
 	private String address;
 
-	// 電話番号
+	/** 電話番号 */
 	private String telephone;
 
-	// 給料
+	/** 給料 */
 	private Integer salary;
 
-	// 特性
+	/** 特性 */
 	private String characteristics;
 
-	// 扶養人数
+	/** 扶養人数 */
 	private Integer dependentsCount;
 
 	public Employee() {

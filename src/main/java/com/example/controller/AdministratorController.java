@@ -81,6 +81,7 @@ public class AdministratorController {
 	 * 
 	 * @param form 入力した管理者情報
 	 * @return 従業員一覧ページへリダイレクト
+	 * 
 	 */
 	@PostMapping("/login")
 	public String login(LoginForm form, Model model) {

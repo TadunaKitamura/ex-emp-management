@@ -31,12 +31,13 @@
 				<div class="well">
 					<!-- ここから上を編集する必要はありません -->
 
-					<form method="post" th:object="${loginForm}" action="../employee/list.html" th:action="@{/login}">
+					<form method="post" th:object="${loginForm}"
+						action="../employee/list.html" th:action="@{/login}">
 						<fieldset>
 							<legend>ログイン</legend>
 							<div class="form-group">
-								<div class="alert alert-danger">
-									<p>メールアドレスまたはパスワードが間違っています</p>
+								<div class="alert alert-danger" th:if="${messeage}">
+									<p th:text="${messeage}">メールアドレスまたはパスワードが不正です</p>
 								</div>
 							</div>
 							<div class="form-group">
@@ -47,7 +48,7 @@
 							<div class="form-group">
 								<label for="inputPassword">パスワード:</label> <input type="password"
 									name="password" id="inputPassword" class="form-control"
-									placeholder="Password" th:field="*{password}"/>
+									placeholder="Password" th:field="*{password}" />
 							</div>
 							<div class="form-group">
 								<button type="submit" class="btn btn-primary">ログイン</button>

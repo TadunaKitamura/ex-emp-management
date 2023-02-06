@@ -92,7 +92,7 @@ public class AdministratorController {
 
 		}
 		session.setAttribute("administratorName", administrator.getName());
-		return "redirect:/employee/showLIst";
+		return "redirect:/employee/showList";
 	}
 
 }

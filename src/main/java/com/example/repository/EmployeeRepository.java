@@ -40,6 +40,7 @@ public class EmployeeRepository {
 		employee.setTelephone(rs.getString("telephone"));
 		employee.setMailAddress(rs.getString("mail_address"));
 		employee.setSalary(rs.getInt("salary"));
+		employee.setCharacteristics(rs.getString("characteristics"));
 		employee.setDependentsCount(rs.getInt("dependents_count"));
 
 		return employee;
